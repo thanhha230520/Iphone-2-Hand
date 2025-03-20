@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm - iPhone 2 Hand</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html">iPhone 2 Hand</a>
+        </div>
+        <div class="slogan">Chuyên iPhone cũ - Giá tốt - Bảo hành dài hạn</div>
+        <nav>
+            <ul>
+                <li><a href="sanpham.html">Sản phẩm</a></li>
+                <li><a href="giohang.html">Giỏ hàng</a></li>
+                <li><a href="thanhtoan.html">Thanh toán</a></li>
+                <li><a href="tracuu.html">Tra cứu đơn hàng</a></li>
+                <li><a href="vitri.html">Vị trí cửa hàng</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Nội dung -->
+    <main>
+        <h1>Sản phẩm iPhone</h1>
+
+        <!-- Danh sách sản phẩm -->
+        <div class="product-list">
+
+            <!-- iPhone XSM -->
+            <h2 id="xsm">iPhone XSM</h2>
+            <div class="product">
+                <img src="https://via.placeholder.com/200x200?text=iPhone+XSM" alt="iPhone XSM">
+                <h3>iPhone XSM - 64GB</h3>
+                <p>Giá: 6,500,000 VNĐ</p>
+                <button onclick="addToCart('iPhone XSM - 64GB', 6500000)">Thêm vào giỏ</button>
+            </div>
+
+            <!-- iPhone 11 Pro -->
+            <h2 id="11pro">iPhone 11 Pro</h2>
+            <div class="product">
+                <img src="https://via.placeholder.com/200x200?text=iPhone+11+Pro" alt="iPhone 11 Pro">
+                <h3>iPhone 11 Pro - 128GB</h3>
+                <p>Giá: 8,500,000 VNĐ</p>
+                <button onclick="addToCart('iPhone 11 Pro - 128GB', 8500000)">Thêm vào giỏ</button>
+            </div>
+
+            <!-- iPhone 16 Series -->
+            <h2 id="16series">iPhone 16 Series</h2>
+            <div class="product">
+                <img src="https://via.placeholder.com/200x200?text=iPhone+16+Pro+Max" alt="iPhone 16 Pro Max">
+                <h3>iPhone 16 Pro Max - 256GB</h3>
+                <p>Giá: 26,000,000 VNĐ</p>
+                <button onclick="addToCart('iPhone 16 Pro Max - 256GB', 26000000)">Thêm vào giỏ</button>
+            </div>
+
+            <!-- Các dòng khác -->
+            <h2 id="12series">iPhone 12 Series</h2>
+            <h2 id="13series">iPhone 13 Series</h2>
+            <h2 id="14series">iPhone 14 Series</h2>
+            <h2 id="15series">iPhone 15 Series</h2>
+            <p>Đang cập nhật thêm sản phẩm...</p>
+
+        </div>
+    </main>
+
+    <!-- Popup thanh toán thành công (ẩn) -->
+    <div id="popup" class="popup hidden">
+        <p>Thêm vào giỏ thành công!</p>
+        <button onclick="closePopup()">Đóng</button>
+    </div>
+
+    <!-- Chatbot + Live chat -->
+    <div id="chatbot-container"></div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
