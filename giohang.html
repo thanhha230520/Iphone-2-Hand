@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng - iPhone 2 Hand</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html">iPhone 2 Hand</a>
+        </div>
+        <div class="slogan">Chuyên iPhone cũ - Giá tốt - Bảo hành dài hạn</div>
+        <nav>
+            <ul>
+                <li><a href="sanpham.html">Sản phẩm</a></li>
+                <li><a href="giohang.html">Giỏ hàng</a></li>
+                <li><a href="thanhtoan.html">Thanh toán</a></li>
+                <li><a href="tracuu.html">Tra cứu đơn hàng</a></li>
+                <li><a href="vitri.html">Vị trí cửa hàng</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Nội dung -->
+    <main>
+        <h1>Giỏ hàng của bạn</h1>
+        <div id="cart-items"></div>
+        <div id="cart-total"></div>
+
+        <div class="cart-actions">
+            <a href="thanhtoan.html" class="btn">Đi đến Thanh toán</a>
+            <button onclick="clearCart()" class="btn danger">Xóa giỏ hàng</button>
+        </div>
+    </main>
+
+    <!-- Chatbot + Live chat -->
+    <div id="chatbot-container"></div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+    <script>
+        // Hiển thị giỏ hàng khi vào trang
+        displayCart();
+    </script>
+</body>
+</html>
